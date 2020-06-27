@@ -1,0 +1,47 @@
+
+
+body {
+  padding-top: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+}
+/* element selector */
+h5, h6 {
+  font-style: italic;
+}
+
+/* ID selector */
+#idtohighlight {
+  background-color: paleturquoise;
+}
+
+/* attribute selector */
+li[class="better ones"] {
+    font-weight: bold;
+}
+
+/* Descendant combinator*/
+/* We use it for the table headers here - cf. food section */
+table thead {
+    color: #4287f5;
+}
+
+/* Class selectors */
+.s-image-wrapper {
+    overflow: hidden;
+}
+
+.s-image-wrapper img {
+    width: 100%;
+    transition: 350ms ease;
+    cursor: pointer;
+}
+
+.s-image-wrapper img:hover {
+    transform: scale(1.2);
+}

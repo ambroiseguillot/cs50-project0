@@ -1,0 +1,27 @@
+
+$color: grey;
+$colorInList: #4d94ff;
+
+div {
+      font-size: 18px;
+      p {
+          color: $color;
+          font-style: italic;
+      }
+      li {
+          color: $colorInList;
+      }
+  }
+
+
+%sideNote {
+     font-style: italic;
+     font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainPageNotes {
+      @extend %sideNote;
+      background-color: white;
+      font-weight: bold;
+  }
